@@ -1,0 +1,1 @@
+curl -XGET -H "trpc-batch-mode: stream" -H "content-type: application/json" -H "trpc-accept: application/jsonl" -G 'localhost:3000/sleep,sleep' --data-urlencode 'batch=1' --data-urlencode 'input={ "0": { "json": 5 }, "1": { "json": 1 } }'
